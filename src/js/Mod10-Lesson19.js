@@ -1,4 +1,6 @@
-    console.log('Repeta: ');
+    import pokemonCardTpl from '../templates/pokemon-card.hbs';
+import templateFunction from './template.hbs';
+console.log('Repeta: ');
 
 { console.log('Repeta: fetch-api');
     /* 
@@ -19,11 +21,10 @@
 
 
 
-    // import pokemonCardTpl from '';
 
-    // const refs = {
-    //     cardContainer: document.querySelector('.js-card-container'),
-    // }
+    const refs = {
+        cardContainer: document.querySelector('.js-card-container'),
+    }
 
 
 
@@ -32,9 +33,9 @@
         return response.json();
     }).then(pokemon => {
         console.log(pokemon);
-        //         const markup = pokemonCardTpl(pokemon);
-        //         console.log(markup)
-        //         refs.cardContainer.innerHTML = markup
+                const markup = pokemonCardTpl(pokemon);
+                console.log(markup)
+                refs.cardContainer.innerHTML = markup
     })
         .catch(error => {
             console.log(error);
