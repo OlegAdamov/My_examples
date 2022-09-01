@@ -1,2 +1,0 @@
-console.log("Repeta: ");console.log("Операция spread (распыление)");console.log("Деструктуризация объекта"),console.log("Операция rest (сбор)"),console.log("Объект параметров"),console.log("Операция Object - примеры"),console.log("Операция Массив Объектов - примеры");{console.log("Task AutoCheck-28");const o=[...[64,42,93],...[89,14,51,26],...[29,47,18,97,81]];Math.max(...o),Math.min(...o)}console.log("Task AutoCheck-30");console.log("Task AutoCheck-32");console.log("Task AutoCheck-41");console.log("Task ");
-//# sourceMappingURL=Modul-3.b03032c1.js.map
