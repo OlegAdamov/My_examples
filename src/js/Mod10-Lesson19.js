@@ -1,7 +1,8 @@
+import '../sass/_modul10.scss'
     import pokemonCardTpl from '../templates/pokemon-card.hbs';
+    import API from './api-service'
 import templateFunction from '../templates/pokemon-card.hbs';
-document.body.innerHTML = templateFunction();
-
+import getRefs from './get-refs';
 
 
 console.log('Repeta: ');
@@ -26,23 +27,31 @@ console.log('Repeta: ');
 
 
 
-    const refs = {
-        cardContainer: document.querySelector('.js-card-container'),
-    }
+    const refs = getRefs();
 
+refs.searchForm.addEventListener('submit', onSearch)
+    
+    function onSearch(event) {
+        event.preventDefault();
+        const form = event.currentTarget;
+        const searchQuery = form.elements.query.value;
+    
+    API.fetchPokemon(searchQuery)
+        .then(renderPokemonCard)
+        .catch(onFetchError)
+        .finally(() => form.reset());
+ }
+    
 
-
-    fetch('https://pokeapi.co/api/v2/pokemon/2')
-        .then(response => {
-        return response.json();
-    }).then(pokemon => {
-        console.log(pokemon);
+    
+    function renderPokemonCard(pokemon) {
                 const markup = pokemonCardTpl(pokemon);
                 refs.cardContainer.innerHTML = markup
-    })
-        .catch(error => {
-            console.log(error);
-        });
+
+    }
+    function onFetchError(error) {
+alert('Упс, что-т пошло не так и мы не можем найти Вашего покемона!')
+    }
 }
 
 
