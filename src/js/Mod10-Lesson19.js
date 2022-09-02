@@ -52,6 +52,18 @@ refs.searchForm.addEventListener('submit', onSearch)
     function onFetchError(error) {
 alert('Упс, что-т пошло не так и мы не можем найти Вашего покемона!')
     }
+
+// ====================
+    fetch('https://pokeapi.co/api/v2/pokemon?limit=50')
+        .then(r => r.json())
+        .then(console.log);
+
+
+
+
+
+
+
 }
 
 
