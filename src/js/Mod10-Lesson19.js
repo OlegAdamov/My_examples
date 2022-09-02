@@ -1,5 +1,9 @@
     import pokemonCardTpl from '../templates/pokemon-card.hbs';
-import templateFunction from './template.hbs';
+import templateFunction from '../templates/pokemon-card.hbs';
+document.body.innerHTML = templateFunction();
+
+
+
 console.log('Repeta: ');
 
 { console.log('Repeta: fetch-api');
@@ -28,13 +32,12 @@ console.log('Repeta: ');
 
 
 
-    fetch('https://pokeapi.co/api/v2/pokemon/2/')
+    fetch('https://pokeapi.co/api/v2/pokemon/2')
         .then(response => {
         return response.json();
     }).then(pokemon => {
         console.log(pokemon);
                 const markup = pokemonCardTpl(pokemon);
-                console.log(markup)
                 refs.cardContainer.innerHTML = markup
     })
         .catch(error => {
