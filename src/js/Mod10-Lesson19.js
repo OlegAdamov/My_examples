@@ -9,7 +9,7 @@ console.log('Repeta: ');
 
 { console.log('Repeta: fetch-api');
     /* 
-    * - HTTP-запросыв браузере
+    * - HTTP-запросы в браузере
     *  - Fetch API
     *  - Вкладка Network
     *  - HTTP-методы
@@ -21,6 +21,11 @@ console.log('Repeta: ');
     * - Аутентификация
     * - Библиотеки-обёртки
     * - https://pokeapi.co/
+    * - 
+    * Часть 3 
+    * - Cross-Origin Resource Sharing (CORS)
+    * - Proxy
+    *   - Хранение API ключей и секретов
     * - 
     */
 
@@ -54,10 +59,13 @@ alert('Упс, что-т пошло не так и мы не можем найт
     }
 
 // ====================
-    fetch('https://pokeapi.co/api/v2/pokemon?limit=50')
-        .then(r => r.json())
-        .then(console.log);
+    // fetch('https://pokeapi.co/api/v2/pokemon?limit=10')
+    //     .then(r => r.json())
+    //     .then(console.log);
 
+    
+    
+    
 
 
 
@@ -125,15 +133,38 @@ alert('Упс, что-т пошло не так и мы не можем найт
 
 {    console.log('Task-Konsp: REST API');
 
+
+}
+
+{    console.log('Task-Konsp: AJAX');
+
+    // fetch("https://jsonplaceholder.typicode.com/users")
+//   .then(response => {
+//     if (!response.ok) {
+//       throw new Error(response.status);
+//     }
+//     return response.json();
+//   })
+//   .then(data => {
+//     // Data handling
+//   })
+//   .catch(error => {
+//     // Error handling
+//   });
     
+    const searchParams = new URLSearchParams({
+  _limit: 5,
+  _sort: "name",
+});
 
+// console.log(searchParams.toString()); // "_limit=5&_sort=name"
+
+const url = `https://jsonplaceholder.typicode.com/users?${searchParams}`;
+// console.log(url); // "https://jsonplaceholder.typicode.com/users?_limit=5&_sort=name"
+    
 }
 
-{    console.log('Task-Konsp:');
-
-}
-
-{    console.log('Task-Konsp:');
+{    console.log('Task-Konsp: ');
 
 }
 

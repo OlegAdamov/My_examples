@@ -38,3 +38,49 @@
     margin-left: 10px;
     transition: background-color 250ms linear;
 }
+
+
+
+
+
+.posts {
+    margin: 0;
+    list-style: none;
+    padding: 24px;
+}
+
+.posts li:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.post-title {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.post-title:first-letter {
+    text-transform: uppercase;
+}
+
+.post-body {
+    margin: 0;
+}
+
+.alert {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 8px;
+    text-align: center;
+    background-color: tomato;
+    color: #fff;
+    transform: translatey(-100%);
+    transition: transform 250ms ease-in-out;
+}
+
+.alert.is-visible {
+    transform: translatey(0);
+}
