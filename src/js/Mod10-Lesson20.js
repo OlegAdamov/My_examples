@@ -16,7 +16,7 @@ console.log('Repeta: ');
         },
     };
 
-    fetnc('https://newsapi.org/v2/everything?q=cat&language=en&pageSize=5', options)
+    fetch('https://newsapi.org/v2/everything?q=cat&language=en&pageSize=5', options)
         .then(r => r.json())
         .then(console.log);
     
