@@ -10,15 +10,15 @@ console.log('Repeta: ');
 
 { console.log('Repeta: Пагинация');
 
-    const options = {
-        headers: {
-            Authorization: '',
-        },
-    };
+    // const options = {
+    //     headers: {
+    //         Authorization: '',
+    //     },
+    // };
 
-    fetch('https://newsapi.org/v2/everything?q=cat&language=en&pageSize=5', options)
-        .then(r => r.json())
-        .then(console.log);
+    // fetch('https://newsapi.org/v2/everything?q=cat&language=en&pageSize=5', options)
+    //     .then(r => r.json())
+    //     .then(console.log);
     
 
 

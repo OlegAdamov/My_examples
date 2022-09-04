@@ -1,6 +1,6 @@
 import '../sass/_modul10.scss'
-    import pokemonCardTpl from '../templates/pokemon-card.hbs';
-    import API from './api-service'
+import pokemonCardTpl from '../templates/pokemon-card.hbs';
+import API from './api-service';
 import templateFunction from '../templates/pokemon-card.hbs';
 import getRefs from './get-refs';
 
@@ -120,12 +120,7 @@ alert('Упс, что-т пошло не так и мы не можем найт
 
 }
 
-{console.log('Autocheck: ');
 
-
-    
-
-}
 
 
 
