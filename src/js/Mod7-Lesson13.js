@@ -40,8 +40,8 @@
 
 }
 
-{
-    console.log('Repeta: Example');
+{console.log('Repeta: Example');
+    
 
     {
 //         const tagsContainer = document.querySelector('.js-tags');
@@ -101,8 +101,8 @@
     
 
     }
-const result = _.add(2, 3);
-console.log(result); // 5
+// const result = _.add(2, 3);
+// console.log(result); // 5
     {
 
         

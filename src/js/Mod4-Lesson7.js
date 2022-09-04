@@ -612,10 +612,7 @@ const filteredNumbers = numbers.filter(value => value > 3);
 
 }
 
-{console.log('Task-Konsp: ');
-
-
-
+{console.log('Task-Konsp: Свойство event.target');
 
 }
 
