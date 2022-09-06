@@ -854,7 +854,29 @@ for (i = min; i <= max; i += 1) {
 
 }
 
+{console.log('Example: ')
 
+    
+}
+
+{console.log('Example: ')
+
+
+}
+
+{console.log('Example: Переменные')
+
+    let userName;
+    console.log(typeof userName)
+    
+    
+    
+    
+    
+    
+    
+
+}
 
 
 
