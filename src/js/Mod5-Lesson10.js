@@ -521,6 +521,103 @@ for (const key in dog) {
   }  
 }
 
+
+{    console.log('Task-Konsp:');
+
+}
+
+
+{    console.log('Task-Konsp:');
+
+}
+
+
+{    console.log('Task-Konsp: Конструктор класса');
+class User {
+  // Синтаксис объявления метода класса
+  constructor(name, email) {
+    // Инициализация свойств экземпляра
+    this.name = name;
+    this.email = email;
+  }
+}
+
+const mango = new User("Манго", "mango@mail.com");
+// console.log(mango); // { name: 'Манго', email: 'mango@mail.com' }
+
+const poly = new User("Поли", "poly@mail.com");
+// console.log(poly); // { name: 'Поли', email: 'poly@mail.com' }
+  
+}
+
+{    console.log('Task-Konsp: Объект параметров');
+
+  class User {
+  // Деструктуризируем объект
+  constructor({ name, email }) {
+    this.name = name;
+    this.email = email;
+  }
+}
+
+const mango = new User({
+  name: "Манго",
+  email: "mango@mail.com",
+});
+// console.log(mango); // { name: "Манго", email: "mango@mail.com" }
+
+const poly = new User({
+  name: "Поли",
+  email: "poly@mail.com",
+});
+// console.log(poly); // { name: "Поли", email: "poly@mail.com" }
+}
+
+{    console.log('Task-Konsp: Методы класса');
+
+  class User {
+  constructor({ name, email }) {
+    this.name = name;
+    this.email = email;
+  }
+
+  // Метод getEmail
+  getEmail() {
+    return this.email;
+  }
+
+  // Метод changeEmail
+  changeEmail(newEmail) {
+    this.email = newEmail;
+  }
+}
+}
+
+
+{    console.log('Task-Konsp: ');
+
+  
+}
+
+
+{    console.log('Task-Konsp: ');
+
+}
+
+
+{    console.log('Task-Konsp: ');
+
+}
+
+
+{    console.log('Task-Konsp: ');
+
+}
+
+
+
+
+
 {    console.log('Task-Konsp: class - static');
 
   class User {
@@ -542,18 +639,6 @@ const mango = new User({ email: "mango@mail.com" });
 
 // console.log(User.isEmailTaken("poly@mail.com"));
 // console.log(User.isEmailTaken("mango@mail.com"));
-}
-
-{    console.log('Task-Konsp:');
-
-}
-
-{    console.log('Task-Konsp:');
-
-}
-
-{    console.log('Task-Konsp:');
-
 }
 
 {    console.log('Task-Konsp:');

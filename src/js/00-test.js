@@ -864,17 +864,57 @@ for (i = min; i <= max; i += 1) {
 
 }
 
-{console.log('Example: Переменные')
+{    console.log('Example for Freelancer: while/do while, for')
 
-    let userName;
-    console.log(typeof userName)
+    // let num2 = 0
+    // while (num2 < 6) {
+    //     console.log(num2);
+    //     num2++;
+    // }
+ 
+    // let num = 0;
+    // do {
+    //     console.log(num);
+    //     num++;
+    // } while (num < 6);
     
-    
-    
-    
-    
-    
-    
+    // let num3;
+    // for (num3 = 0; num3 < 6; num3++) {
+    //     console.log(num3);
+    // }
+    // console.log(`Out of cicle: ${num3}`);
+
+    // let num4 = 0;
+    // for (; num4 < 6;) {
+    //     console.log(num4);
+    //     num4++;
+    // }
+
+    // let num5 = 8;
+    // while (num5) {
+    //     console.log(num5);
+    //     num5--;
+    // }
+
+    // for (let num6 = 0; num6 < 3; num6++) {
+    //     console.log(`Number: ${num6}`);
+    // };
+
+    // let num7 = 0;
+    // while (num7 < 3) {
+    //     console.log(num7);
+    //     num7++
+    // };
+
+    // firstFor: for (let num8 = 0; num8 < 2; num8++) {
+    //     for (let size8 = 0; size8 < 3; size8++) {
+    //         console.log(size8);
+    //         if (size8 == 1) {
+    //             break firstFor;
+    //         }; 
+    //         console.log(num8);
+    //     }
+    // }
 
 }
 
