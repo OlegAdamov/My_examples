@@ -733,6 +733,23 @@ const findLogin = function (allLogins, loginToFind) {
 
 }
 
+{ console.log(`Function Freelancer`);
+
+    if (2 > 1) {
+        function showMessage() {
+            console.log('My Message');
+    }
+    }
+    showMessage();
+
+}
+
+{ console.log(`Function Freelancer`);
+}
+
+{ console.log(`Function Freelancer`);
+}
+
 { console.log(`Function + Function (Freelancer - Рекурсия)`);
 
     // function calcSumm(numOne, numTwo) {
