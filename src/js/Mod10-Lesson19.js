@@ -106,8 +106,18 @@ alert('Упс, что-т пошло не так и мы не можем найт
 
 
 
-{console.log('Autocheck: ');
+{console.log('Lesson:29.08 - axios.create ');
 
+//     const api = axios.create({
+//   baseURL: 'https://jsonplaceholder.typicode.com',
+//     });
+
+    // api.get('/todos')
+    //     .then(response => console.log(response.data))
+    //         .catch(error => console.log(error));
+
+    // api.post('/posts', { title: 'foo', body: 'bar', userId: 1, })
+    //     .then(response => console.log(response));
 
 
 

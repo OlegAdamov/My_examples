@@ -36,7 +36,7 @@
 
 
 
-{console.log('Autocheck: ');
+{console.log('Lesson: ');
 
 
 
@@ -69,8 +69,10 @@
 
 }
 
-{    console.log('Task-Konsp:');
+{    console.log('Task-Konsp: Async');
 
+
+    
 }
 
 {    console.log('Task-Konsp:');
