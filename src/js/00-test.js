@@ -937,12 +937,8 @@ for (i = min; i <= max; i += 1) {
         // return this; Возвращается объект (неявно)
     }
     
-    console.log('UserInfo5', new UserInfo5('Viktor'))
-    console.log('UserInfo5', new UserInfo5('Helen', 24))
-
-
-
-
+    // console.log('UserInfo5', new UserInfo5('Viktor'))
+    // console.log('UserInfo5', new UserInfo5('Helen', 24))
 
 }
 
