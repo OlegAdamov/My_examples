@@ -733,48 +733,6 @@ const findLogin = function (allLogins, loginToFind) {
 
 }
 
-{ console.log(`Function Freelancer`);
-
-    if (2 > 1) {
-        function showMessage() {
-            console.log('My Message');
-    }
-    }
-    showMessage();
-
-}
-
-{ console.log(`Function Freelancer`);
-}
-
-{ console.log(`Function Freelancer`);
-}
-
-{ console.log(`Function + Function (Freelancer - Рекурсия)`);
-
-    // function calcSumm(numOne, numTwo) {
-    //     let result = 1;
-    //     // Умножаем result на numOne numTwo раз в цикле
-    //     for (let i = 0; i < numTwo; i++) {
-    //         result *= numOne;
-    //     }
-    //     return result;
-    // }
-    // console.log(calcSumm(5, 3));
-
-    // function calcSumm(numOne, numTwo) {
-    //     if (numTwo === 1) {
-    //         return numOne;
-    //     } else {
-    //         return numOne * calcSumm(numOne, numTwo - 1);
-    //     }
-    // }
-    // console.log(calcSumm(5, 3));
-
-
-}
-
-
 
 
 
@@ -881,59 +839,233 @@ for (i = min; i <= max; i += 1) {
 
 }
 
-{    console.log('Example for Freelancer: while/do while, for')
+{ console.log(`Freelancer Function`);
 
-    // let num2 = 0
-    // while (num2 < 6) {
-    //     console.log(num2);
-    //     num2++;
-    // }
- 
-    // let num = 0;
-    // do {
-    //     console.log(num);
-    //     num++;
-    // } while (num < 6);
-    
-    // let num3;
-    // for (num3 = 0; num3 < 6; num3++) {
-    //     console.log(num3);
-    // }
-    // console.log(`Out of cicle: ${num3}`);
-
-    // let num4 = 0;
-    // for (; num4 < 6;) {
-    //     console.log(num4);
-    //     num4++;
-    // }
-
-    // let num5 = 8;
-    // while (num5) {
-    //     console.log(num5);
-    //     num5--;
-    // }
-
-    // for (let num6 = 0; num6 < 3; num6++) {
-    //     console.log(`Number: ${num6}`);
-    // };
-
-    // let num7 = 0;
-    // while (num7 < 3) {
-    //     console.log(num7);
-    //     num7++
-    // };
-
-    // firstFor: for (let num8 = 0; num8 < 2; num8++) {
-    //     for (let size8 = 0; size8 < 3; size8++) {
-    //         console.log(size8);
-    //         if (size8 == 1) {
-    //             break firstFor;
-    //         }; 
-    //         console.log(num8);
-    //     }
-    // }
+    if (2 > 1) {
+        function showMessage() {
+            console.log('My Message');
+    }
+    }
+    // showMessage();
 
 }
+
+{ console.log(`Freelancer Objects`);
+
+    let userInfo = {
+        name: "Vova",
+        age: 30,
+        "Likes javascript": true,
+    };
+    // console.log(userInfo.name);
+    // console.log(userInfo["Likes javascript"]);
+
+
+    let firstPart = "likes";
+    let userInfo1 = {
+        name: "Vova",
+        age: 30,
+        [firstPart + " javascript"]: "welcome",
+        showInfo() {
+            // function show() { console.log(`${this.name}, ${this.age}`) }; - будет ошибка this. - не найдёт ничего
+            let show = () => console.log(`${this.name}, ${this.age}`);
+            show();
+        },
+    };
+    // console.log(userInfo1["likes javascript"]);
+    // userInfo1.showInfo();
+
+    let userInfo2 = {
+        name: "Vova",
+        age: 45,
+        address: {
+            city: "Odessa",
+            street: "Home",
+        },
+        showInfo: function () {     
+            console.log(`${userInfo2.name}, ${userInfo2.age} лет. Адресс: г.${userInfo2.address.city}, ул.${userInfo2.address.street}`);
+        },
+    };
+    // console.log('userInfo2', userInfo2)
+    // console.log('address', userInfo2.address)
+    // console.log('city', userInfo2.address.city)
+    // userInfo2.showInfo()
+    
+
+    function makeUserInfo(name, age, address) {
+        return {
+            name: name,
+            age: age,
+            address,
+        };
+}
+    let userInfo3 = makeUserInfo("Vova", 45, {home: "home", street: "welcome"});
+    // console.log('userInfo3', userInfo3)
+
+    // {
+    //     let userInfo4 =
+    //         Object.assign(userInfo2, {
+    //             married: "no", children: "yes",
+    //             ['work job']: { boss: "yes", staff: "no" }
+    //         });
+    //     userInfo4.age = 32;
+    //     console.log('userInfo4', userInfo4)
+
+    //     if (userInfo4['work job'].boss) {
+    //     console.log('userInfo4[`work job`].boss:', userInfo4['work job'].boss)
+    //     }
+
+    //      console.log('userInfo4[`work job`].boss:', userInfo4?.['work job']?.boss)
+
+    //     if ("name" in userInfo4) {
+    //     console.log(userInfo4.name)
+    //     }
+    // };
+
+// Функция - Конструктор
+/* 
+Функции  - конструкторы являются обычными функциями.
+Но есть два правила:
+1. Имя функции - конструктора должно начинаться с большой буквы.
+2. Функция - конструктор должна вызываться при помощи оператора New
+*/
+    
+    function UserInfo5(name, age = 32) {
+        // this = {}; Создается пустой объект (неявно)
+        this.name = name;
+        this.age = age;
+        // return this; Возвращается объект (неявно)
+    }
+    
+    console.log('UserInfo5', new UserInfo5('Viktor'))
+    console.log('UserInfo5', new UserInfo5('Helen', 24))
+
+
+
+
+
+}
+
+{ console.log(`Freelancer `);
+}
+
+{ console.log(`Freelancer `);
+}
+
+{ console.log(`Freelancer `);
+}
+
+{ console.log(`Freelancer `);
+}
+
+{ console.log(`Freelancer function-calc`);
+
+
+    // function calcSumm(numOne, numTwo) {
+    //     let result = 1;
+    //     // Умножаем result на numOne numTwo раз в цикле
+    //     for (let i = 0; i < numTwo; i++) {
+    //         result *= numOne;
+    //     }
+    //     return result;
+    // }
+    // console.log(calcSumm(5, 3));
+
+    // function calcSumm(numOne, numTwo) {
+    //     if (numTwo === 1) {
+    //         return numOne;
+    //     } else {
+    //         return numOne * calcSumm(numOne, numTwo - 1);
+    //     }
+    // }
+    // console.log(calcSumm(5, 3));
+
+
+}
+
+
+
+
+
+
+
+{    console.log('Example for Freelancer: while/do while, for, for in')
+
+    let num2 = 0
+    while (num2 < 6) {
+        // console.log(num2);
+        num2++;
+    }
+ 
+    let num = 0;
+    do {
+        // console.log(num);
+        num++;
+    } while (num < 6);
+    
+    let num3;
+    for (num3 = 0; num3 < 6; num3++) {
+        // console.log(num3);
+    }
+    // console.log(`Out of cicle: ${num3}`);
+
+    let num4 = 0;
+    for (; num4 < 6;) {
+        // console.log(num4);
+        num4++;
+    }
+
+    let num5 = 8;
+    while (num5) {
+        // console.log(num5);
+        num5--;
+    }
+
+    for (let num6 = 0; num6 < 3; num6++) {
+        // console.log(`Number: ${num6}`);
+    };
+
+    let num7 = 0;
+    while (num7 < 3) {
+        // console.log(num7);
+        num7++
+    };
+
+    firstFor: for (let num8 = 0; num8 < 2; num8++) {
+        for (let size8 = 0; size8 < 3; size8++) {
+            // console.log(size8);
+            if (size8 == 1) {
+                break firstFor;
+            }; 
+            // console.log(num8);
+        }
+    }
+    
+        let userInfo = {
+        name: "Vova",
+        age: 45,
+        address: {
+            city: "Odessa",
+            street: "Home",
+        }
+    }
+
+    for (let key in userInfo)
+       { // ключи
+        // console.log(key);
+        // значения ключей
+        // console.log(userInfo[key]);
+    }
+    
+    for (let key in userInfo.address) {
+    // ключи
+    // console.log(key)
+        // значения ключей
+        // console.log(userInfo.address[key]);
+}
+
+
+};
 
 
 
