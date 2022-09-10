@@ -1,0 +1,2 @@
+!function(){console.log("Repeta: ");console.log("Repeta: CRUD");console.log("Repeta: CRUD: -get ");console.log("Repeta: CRUD: -post ");console.log("Repeta: CRUD: -patch ");console.log("Repeta: CRUD: -delete ");console.log("Example: "),console.log("Example: "),console.log("Example: "),console.log("Autocheck: "),console.log("Autocheck: "),console.log("Autocheck: "),console.log("Task-Konsp:"),console.log("Task-Konsp:"),console.log("Task-Konsp:"),console.log("Task-Konsp:"),console.log("Task-Konsp:"),console.log("Task-Konsp:")}();
+//# sourceMappingURL=Modul-11.c2476feb.js.map
