@@ -1,8 +1,8 @@
 import '../sass/_modul10.scss'
-//     import pokemonCardTpl from '../templates/pokemon-card.hbs';
-//     import API from './api-service'
-// import templateFunction from '../templates/pokemon-card.hbs';
-// import getRefs from './get-refs';
+    import pokemonCardTpl from '../templates/pokemon-card.hbs';
+    import API from './api-service'
+import templateFunction from '../templates/pokemon-card.hbs';
+import getRefs from './get-refs';
    
 
 
@@ -10,15 +10,15 @@ console.log('Repeta: ');
 
 { console.log('Repeta: Пагинация');
 
-    // const options = {
-    //     headers: {
-    //         Authorization: '',
-    //     },
-    // };
+    const options = {
+        headers: {
+            Authorization: '',
+        },
+    };
 
-    // fetch('https://newsapi.org/v2/everything?q=cat&language=en&pageSize=5', options)
-    //     .then(r => r.json())
-    //     .then(console.log);
+    fetch('https://newsapi.org/v2/everything?q=cat&language=en&pageSize=5', options)
+        .then(r => r.json())
+        .then(console.log);
     
 
 
@@ -130,7 +130,7 @@ function renderPosts(posts) {
         </li>`;
     })
     .join("");
-//   userList.innerHTML = markup;
+  userList.innerHTML = markup;
 }
 }
 
@@ -195,7 +195,7 @@ function renderPosts(posts) {
         </li>`;
     })
     .join("");
-//   userList.insertAdjacentHTML("beforeend", markup);
+  userList.insertAdjacentHTML("beforeend", markup);
 }
 
 function toggleAlertPopup() {
