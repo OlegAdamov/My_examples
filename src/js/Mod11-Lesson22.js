@@ -21,13 +21,14 @@ console.log('Repeta: ');
         e.preventDefault();
  
      newsApiService.query = e.currentTarget.elements.query.value;
-     newsApiService.fetchArticles(searchQuery);
+     newsApiService.resetPage();
+     newsApiService.fetchArticles();
 
     
     }
 
     function onLoadMore() {
-        newsApiService.fetchArticles(searchQuery);
+        newsApiService.fetchArticles();
 
 }
 
